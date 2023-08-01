@@ -1,11 +1,20 @@
 const steps = document.querySelectorAll(".step");
-
-steps.forEach(e => e.addEventListener("click", function() {
-    var step = this;
-    steps.forEach(s => {
-        if (s !== step) {
-            s.classList.remove("active");
+const description = document.querySelectorAll(".description")
+for(let i=0; i < steps.length; i++){
+    steps[i].addEventListener('click',function () {
+        for(let i=0; i < steps.length; i++){
+            steps[i].classList.remove("active")
+            description[i].classList.remove("active")
         }
-    });
-    step.classList.toggle("active");
-}));
+        steps[i].classList.add("active")
+        description[i].classList.add("active")
+        steps[i].addEventListener('click',function () {
+            for(let i=0; i < steps.length; i++){
+                steps[i].classList.remove("active")
+                description[i].classList.remove("active")
+            }
+        })
+        steps[i].classList.add("active")
+        description[i].classList.add("active")
+    })
+}
