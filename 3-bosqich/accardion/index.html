@@ -3,38 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style/style.css">
+  <title>Accordion</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="form">
-      <button class="hotel">
-        <h1>1.Hotel facilities</h1>
-        <div class="hotel_comment close">
-          <p>We have got everything you need covered, from haidryer to <br> ski storage at the
-            lobby. Donot worry about that
-          </p>
-        </div>
-
-      </button>
-      <button class="beach">
-        <h1>2.Closest Beach</h1>
-        <p class="beach_comment close">We have got no real beach anywhere closely to our hotel. There are mountains
-          though!
+  <div class="container">
+    <ul>
+      <li class="step">
+        <p class="title">1. Hotel facilities</p>
+        <p class="description">We've got everything you need covered, from haidryer to ski storage at the lobby. Don't
+          worry about that!</p>
+      </li>
+      <li class="step">
+        <p class="title">2. Closest Beach</p>
+        <p class="description">We've got no real beach anywhere closely to our hotel.<br />There are mountains though!
         </p>
-      </button>
-      <button class="here">
-        <h1>3.How to get here</h1>
-        <p class="hotel_comment close">By plain, you silly
-        </p>
-      </button>
-    </div>
+      </li>
+      <li class="step">
+        <p class="title">3. How to get here</p>
+        <p class="description">By plain, you silly</p>
+      </li>
+    </ul>
   </div>
-
   <script src="./app.js"></script>
 </body>
 
